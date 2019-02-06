@@ -13,6 +13,7 @@ def display_banner():
 def main():
 
     display_banner()
+    print("Enter a sentence to convert to camelCase")
     sentence = input('Enter your sentence:  ')
     words = sentence.split(' ')                               # Break by spaces
     camelcased_words = [ camelcase(word) for word in words ]  # camelCase everything
